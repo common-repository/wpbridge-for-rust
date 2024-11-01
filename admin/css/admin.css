@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins&family=Inconsolata&display=swap');
+
+:root {
+    --rust-red-active: #BB3C25;
+    --rust-red-hover: #cf4c35;
+    --rust-red-active-border: #49170e;
+}
+
+/*
+    Global
+*/
+
+.h5-sm {
+    font-size:0.8rem;
+}
+
+.float-right {
+    float:right;
+}
+
+.wpbridge-underline {
+    text-decoration:underline;
+}
+
+.wpbridge-for-rust-btn {
+    cursor:pointer;
+    color:#fff !important;
+    transition:background 0.5s ease-in;
+    font-family:'Poppins' !important;
+    font-weight:400;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: .375rem .75rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+    margin:0 10px 0 10px;
+}
+
+.wpbridge-for-rust-btn-sm {
+    margin:0 !important;
+    padding:5px;
+    display:inline-block;
+    font-size:0.6rem !important;
+}
+
+.wpbridge-for-rust-btn.active {
+    border: 1px solid var(--rust-red-active-border);
+    background:var(--rust-red-active);
+    margin:0 10px 0 10px;
+}
+
+.wpbridge-for-rust-btn.active:hover {
+    background:var(--rust-red-hover);
+}
+
+.danger-tab.ui-state-default a {
+    color: var(--rust-red-active) !important;
+}
+
+.danger-tab.ui-state-active a {
+    color:white !important;
+}
+
+.th-num {
+    max-width:50px;
+}
+
+.tr-border-bottom {
+    border-bottom:1px solid rgba(80,80,80,0.2);
+}
+
+.wpbridge-text-danger {
+    color: var(--rust-red-active) !important;
+    font-weight: 600 !important;
+}
+
+/*
+    End Global
+*/
+
+/*
+    Setup tab
+*/
+
+.wpbridge-settings-submit-btn {
+    margin-left:0px !important;
+}
+
+/*
+    End Setup tab
+*/
+
+/*
+    Rustmaps tab
+*/
+
+
+.rustmaps-columns-wrapper {
+    display:flex;
+    width:100%;
+    max-height:550px;
+    overflow:hidden;
+}
+
+.rustmaps-info-column {
+    min-width:200px !important;
+    padding:10px;
+    overflow:hidden;
+    overflow-y:scroll;
+}
+.rustmaps-info-column h4 {
+    font-family: 'Poppins';
+    margin: 18px 4px;
+    border-bottom:1px solid #333;
+    font-size: 0.8rem;
+}
+.rustmaps-info-column h5 {
+    margin: 4px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-family: 'Poppins';
+}
+
+.rustmaps-map-column img {
+    height:100%;
+}
+
+
+.rustmap-player-wrapper {
+    padding:0;
+    margin:0;
+    position:absolute;
+    width:50px;
+    top:100px;
+    left:200px;
+}
+.rustmap-player-wrapper > img {
+    padding:0;
+    margin:0;
+    width:50px;
+    border-radius: 50%;
+    display:block;
+}
+.rustmap-player-wrapper > span {
+    padding:0;
+    margin:0;
+    width:100%;
+    position:absolute;
+    top:100%;
+    text-align:center;
+}
+.rustmap-player-wrapper > span > a {
+    padding:0;
+    margin:0;
+    font-family:'Poppins';
+    text-decoration:none;
+    font-size:1.2rem;
+    color:#fff;
+}
+
+/*
+    End Rustmaps tab
+*/
+
+.wpbridge-for-rust-tab-content {
+    /* background:#fff; */
+}
+
+.wpbridge-for-rust-tab-content table th,
+.wpbridge-for-rust-tab-content table td {
+    padding:10px 0;
+}
+
+.wpbridge-for-rust-tab-content table td {
+    font-weight:300;
+}
+
+.wpbridge-for-rust-wrap {
+    font-family: 'Lora';
+    font-weight:600;
+}
+.wpbridge-for-rust-textarea {
+    white-space: pre-wrap !important;
+}
+
+.wpbridge-for-rust-settings-heading {
+    font-weight: 600 !important;
+    font-size:1.5rem !important;
+}
+
+#wpbridge-for-rust-settings-tabs,
+#wpbridge-for-rust-rustmaps-tabs,
+#wpbridge-for-rust-statistics-tabs {
+    background:transparent;
+    border:none;
+    border-radius: 0;
+}
+
+#wpbridge-for-rust-settings-tabs .ui-tabs-panel,
+#wpbridge-for-rust-rustmaps-tabs .ui-tabs-panel,
+#wpbridge-for-rust-statistics-tabs .ui-tabs-panel {
+    z-index:0;
+    border:1px solid rgba(51, 51, 51, 0.25);
+    border-top:0;
+    box-shadow: 0 0 0 3px #bb3b250c;
+}
+#wpbridge-for-rust-settings-tabs .ui-tabs-panel,
+#wpbridge-for-rust-settings-tabs .ui-widget-header,
+
+#wpbridge-for-rust-rustmaps-tabs .ui-tabs-panel,
+#wpbridge-for-rust-rustmaps-tabs .ui-widget-header,
+
+#wpbridge-for-rust-statistics-tabs .ui-tabs-panel,
+#wpbridge-for-rust-statistics-tabs .ui-widget-header{
+    padding:0;
+}
+
+#wpbridge-for-rust-settings-tabs ul.ui-widget-header,
+#wpbridge-for-rust-rustmaps-tabs ul.ui-widget-header,
+#wpbridge-for-rust-statistics-tabs ul.ui-widget-header{
+    background:transparent;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+#wpbridge-for-rust-settings-tabs > ul > li.ui-state-focus > a,
+#wpbridge-for-rust-rustmaps-tabs > ul > li.ui-state-focus > a,
+#wpbridge-for-rust-statistics-tabs > ul > li.ui-state-focus > a{
+    box-shadow: none;
+}
+
+#wpbridge-for-rust-settings-tabs > ul > li.ui-state-hover:not(.ui-state-active),
+#wpbridge-for-rust-rustmaps-tabs > ul > li.ui-state-hover:not(.ui-state-active),
+#wpbridge-for-rust-statistics-tabs > ul > li.ui-state-hover:not(.ui-state-active){
+    background:rgba(255, 255, 255, 0.8) !important;
+}
+
+#wpbridge-for-rust-settings-tabs > ul > li.ui-state-default,
+#wpbridge-for-rust-rustmaps-tabs > ul > li.ui-state-default,
+#wpbridge-for-rust-statistics-tabs > ul > li.ui-state-default{
+    background:rgba(255, 255, 255, 0.5);
+}
+
+#wpbridge-for-rust-settings-tabs > ul > li.ui-state-active,
+#wpbridge-for-rust-rustmaps-tabs > ul > li.ui-state-active,
+#wpbridge-for-rust-statistics-tabs > ul > li.ui-state-active{
+    background: var(--rust-red-active);
+    border-color: var(--rust-red-active-border) !important;
+}
+
+#wpbridge-for-rust-settings-tabs > ul > li > a,
+#wpbridge-for-rust-rustmaps-tabs > ul > li > a,
+#wpbridge-for-rust-statistics-tabs > ul > li > a{
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing: 3px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+
+#wpbridge-for-rust-rustmaps-tabs > ul > li > a,
+#wpbridge-for-rust-statistics-tabs > ul > li > a{
+    font-size:0.8rem;
+}
+
+/* Statistics */
+
+#wpbridge-for-rust-statistics-player-tab {
+
+}
+
+#wpbridge-for-rust-statistics-player-tab .players-table thead {
+    border-bottom:1px solid;
+}
+#wpbridge-for-rust-statistics-player-tab .players-table td {
+    border-bottom:1px solid rgba(80,80,80,0.2);
+}
+
+/* Pro */
+
+
+.wpbridge-for-rust-pro-tab a{
+    color:green !important;
+}
+
+.wpbridge-for-rust-pro-tab.ui-state-active a{
+    color:white !important;
+}
+
+#wpbridge-for-rust-pro-products {
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.wpbridge-for-rust-pro-product {
+    transition: transform 0.2s ease;
+    position:relative;
+    display:flex;
+    flex-flow: column;
+    background:#fff;
+    width:200px;
+    text-align:center;
+    border:1px solid;
+    height:320px;
+    border-radius:4px;
+    margin:50px 10px;
+}
+
+.wpbridge-for-rust-pro-product:hover:not(.wpbridge-for-rust-pro-product-free) {
+    transform: scale(1.1);
+}
+
+.wpbridge-for-rust-pro-product ul {
+    padding-left:5px;
+    padding-right:5px;
+    text-align:left;
+    margin-top:20px;
+}
+.wpbridge-for-rust-pro-product ul li {
+    font-size:.75rem;
+}
+.wpbridge-for-rust-product-header-wrapper {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--rust-red-active);
+    height:60px;
+}
+.wpbridge-for-rust-product-header-wrapper h3 {
+/*     padding:0; */
+/*     margin:10px 0; */
+    font-size: 1rem;
+    line-height:1.4rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color:white;
+}
+.wpbridge-for-rust-pro-product ul li img {
+    height:20px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:10px;
+}
+.wpbridge-for-rust-pro-product button {
+    border:1px solid #fff;
+    border-radius:4px;
+    position:absolute;
+    bottom:10px;
+    height:40px;
+    width:150px;
+    left:25px;
+    font-family:'Poppins';
+}
+
+.wpbridge-for-rust-pro-product:hover button:not([disabled]) {
+    background:#008000;
+    color:white;
+}
+.wpbridge-for-rust-pro-product button:not([disabled]) {
+    border:1px solid #071907;
+    background:var(--rust-red-active);
+    color:#e9e9e9;
+    cursor:pointer;
+    font-weight:300;
+    font-size:1rem;
+    transition: all 0.5s ease;
+}
+.wpbridge-for-rust-pro-product button:not([disabled]):hover {
+    color:#fff !important;
+    background:#00b000;
+}
+
+/* MODAL */
+
+.wpbridge-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.wpbridge-modal-content {
+    box-shadow:#cf4646 0 0 20px;
+    background-color: #fefefe;
+    margin: 6% auto; /* 6% from the top and centered */
+    border:4px solid var(--rust-red-hover);
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+.wpbridge-modal-body {
+    padding:20px;
+    border:2px solid rgba(200,200,200,0.8);
+}
+.wpbridge-modal-body h1{
+    font-family:'Poppins';
+    margin:0 0 20px 0;
+    padding:0;
+}
+
+.wpbridge-modal-body h3{
+    font-family:'Poppins';
+    padding:0;
+}
+
+.wpbridge-modal-body p {
+    font-size:0.8rem;
+    font-family:'Poppins';
+}
+
+.wpbridge-modal-body ul {
+    font-family:'Poppins';
+    list-style:disc;
+    margin-left:30px;
+    padding:0;
+}
+
+.wpbridge-modal-close {
+    margin:4px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.wpbridge-modal-close:hover,
+.wpbridge-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
